@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy-Contacts</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <h1>Easy-Contacts</h1>
+    <div class="container">
+
+      <div class="form">
+        <h2>Add Contact</h2>
+        <form action="" id="input-contact">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" required/>
+    
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" placeholder="+62" required/>
+    
+          <label for="gender">Gender</label>
+          <select name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+    
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="exemple@example" required/>
+    
+          <label for="address">Address</label>
+          <textarea name="address" cols="40" rows="8" id="address" placeholder="address" required></textarea>
+          
+          <button type="submit" value="Submit"> add contact </button>
+        </form>
+      </div>
+
+      <div class="contact-list-section">
+        <div class="search">
+          <input type="text" disabled placeholder="search">
+          <select name="" id="" disabled>
+            <option value="male">Male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+        <div class="list-contacts">
+        </div>
+      </div>
+
+      <div class="detail-section">
+        <h2>Detail</h2>
+        <div class="detail-contacts">
+          <table>
+            <tr>
+              <th>Name</th>
+              <td class="name"></td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td class="phone"></td>
+            </tr>
+            <tr>
+              <th>Gender</th>
+              <td class="gender"></td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td class="email"></td>
+            </tr>
+            <tr>
+              <th>Address</th>
+              <td class="address"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
